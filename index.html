@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>Reproductor Web - Streaming en la Web UNIR</title>
+</head>
+<body>
+    <h1 class="nombre__titulo">Reproductor Video Web - Alondra Guerra Quintero</h1>
+    <section>
+        <h2 class="titulo"></h2>
+        <div class="contenedor">
+            <div id="contenedorVideo">
+                <div id="videoPlayer">
+                    <video id="mainVideo" class="main-video" preload="metadata" src="">
+                        <track label="Spanish" kind="subtitles" src="" srclang="esp">     
+                    </video>
+                    <div id="customControls">
+                        <button id="prevVideo"><i class="fa fa-step-backward"></i></button>
+                        <button id="speedDownButton"><i class="fa fa-backward"></i></button>
+                        <button id="pauseButton"><i class="fa fa-pause"></i></button>
+                        <button id="playButton"><i class="fa fa-play"></i></button>
+                        <button id="speedUpButton"><i class="fa fa-forward"></i></button>
+                        <button id="nextVideo"><i class="fa fa-step-forward"></i></button>
+                    </div>                          
+                    <div id="customControls2">
+                        <button id="muteButton"><i class="fa fa-volume-mute"></i></button>  
+                        <button id="volumeUpButton"><i class="fa fa-volume-up"></i></button>
+                        <div id="volumeControl">
+                            <input type="range" id="volumeSlider" min="0" max="1" step="0.1" value="0.5" orient="vertical" style="width: 80px;">
+                        </div>
+                        <button id="subtitlesButton"><i class="fa fa-closed-captioning"></i></button>
+                        <button id="sizeUpButton"><i class="fa fa-expand"></i></button>
+                        <button id="sizeDownButton"><i class="fa fa-compress"></i></button>
+                    </div>                  
+                    <div id="customRange">
+                        <input type="range" id="seekBar" value="0">
+                    </div>
+                </div>
+                <div id="customButton">
+                    <button id="captureImage" type="button"><i class="fa fa-camera"></i>&nbsp;&nbsp;&nbsp;Capturar imagen</button>
+                </div>
+            </div>
+            <div class="play__list__Bx">
+                <div class="encabezado">
+                    <div class="fila">
+                        <span class="All__videos"></span>
+                    </div>
+                </div>
+                <ul class="play__list" id="playList">
+                </ul>
+            </div>
+        </div>
+    </section>
+    <script src="./videos.js"></script>
+    <script src="./configuration.js"></script>
+</body>
+</html>
