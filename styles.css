@@ -277,8 +277,14 @@ ul li.playing .fila span::before{
     }
     #customControls {
         position: absolute;
-        bottom: 522px;
-        left: 125px;
+        bottom: 550px;
+        margin-right: 48%;
+    }    
+    #customControls2 {
+        position: absolute;
+        bottom: 550px;
+        margin-left: 80%;
+        display: block;
     }
     
 }
